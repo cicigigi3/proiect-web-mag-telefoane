@@ -1,0 +1,67 @@
+// reflexie
+
+#welcome-mesaj {
+ 
+  position: relative;
+  
+  color: var(--text-color-2); 
+  z-index: 1;
+}
+
+#welcome-mesaj .reflexie {
+  
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  
+
+  z-index: 2;
+
+  transform-origin: top;
+  transform: rotateX(180deg) skewX(-45deg) scaleY(0.5) translate(10px, -25px);
+
+  opacity: 0.7;
+  
+  filter: blur(0.5px);
+
+  transition: transform 300ms ease-in-out;
+
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+
+
+#welcome-mesaj:hover .reflexie {
+
+
+  transform: rotateX(180deg) skewX(-50deg) scaleY(0.7) translate(10px, -25px);
+}
+
+
+// stilizare-hr
+
+.hr-bootstrap-custom {
+  
+  border: 0;
+  height: 21px; 
+
+ 
+  background-image: linear-gradient(
+    to bottom,
+    var(--main-color) 0px, var(--main-color) 3px,
+    var(--background-color) 3px, var(--background-color) 6px,
+    var(--main-color) 6px, var(--main-color) 9px,
+    var(--background-color) 9px, var(--background-color) 12px,
+    var(--main-color) 12px, var(--main-color) 15px,
+    var(--background-color) 15px, var(--background-color) 18px,
+    var(--main-color) 18px, var(--main-color) 21px
+  );
+
+  
+  border-radius: 10.5px;
+
+  
+  margin: 3rem 0;
+}

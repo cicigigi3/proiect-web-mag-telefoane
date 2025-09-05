@@ -33,7 +33,7 @@ nav ul li a {
   transition: color 0.3s ease-in-out;
 }
 nav ul li a:hover {
-  color: black;
+  color: #94b5fc;
 }
 nav ul li ul {
   display: flex;
@@ -71,7 +71,7 @@ nav ul li ul li a {
   transition: color 0.3s ease-in-out;
 }
 nav ul li ul li a:hover {
-  color: black;
+  color: #94b5fc;
 }
 nav ul li:hover > ul {
   transform: translateX(-50%) scale(1);

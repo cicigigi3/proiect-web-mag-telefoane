@@ -1,5 +1,11 @@
 <header>
-  <h1 id="welcome-mesaj">Bine ati venit la magazinul nostru!</h1>
+  <!-- Am eliminat container-reflexie și am pus direct h1-ul relativ -->
+  <h1 id="welcome-mesaj">
+    Bine ati venit la magazinul nostru!
+    <!-- Am schimbat span în div -->
+    <div class="reflexie">Bine ati venit la magazinul nostru!</div>
+  </h1>
+  
   <nav>
     <input type="checkbox" id="menu-toggle" hidden />
     <label for="menu-toggle" id="burger-menu">
@@ -8,26 +14,26 @@
 
     <ul id="main-nav">
       <li id="acasa" tabindex="0">
-        <a href="index"
+        <a href="/index"
           ><i class="fa fa-home"></i> <span id="acasa-text">Acasa</span></a
         >
         <ul>
-          <li><a href="#noutati">Noutati</a></li>
-          <li><a href="#pop">Produse populare</a></li>
-          <li><a href="#promotii">Promotii</a></li>
-          <li><a href="#faq">Intrebari frecvente</a></li>
+          <li><a href="/index#noutati">Noutati</a></li>
+          <li><a href="/index#pop">Produse populare</a></li>
+          <li><a href="/index#promotii">Promotii</a></li>
+          <li><a href="/index#faq">Intrebari frecvente</a></li>
         </ul>
       </li>
       <li id="produse">
-        <a href="produse.html">Produse</a>
+        <a href="/produse">Produse</a>
         <ul>
-          <li><a href="telefoane.html">Telefoane</a></li>
-          <li><a href="accesorii.html">Accesorii</a></li>
+          <li><a href="/telefoane">Telefoane</a></li>
+          <li><a href="/accesorii">Accesorii</a></li>
         </ul>
       </li>
-      <li><a href="cos.html">Cos de cumparaturi</a></li>
-      <li><a href="despre">Despre noi</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/cos">Cos de cumparaturi</a></li>
+      <li><a href="/despre">Despre noi</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </nav>
 </header>

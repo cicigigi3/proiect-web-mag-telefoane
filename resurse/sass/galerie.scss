@@ -52,7 +52,7 @@
 
 .grid-galerie figure {
   margin: 0;
-  border: 4px solid var(--border-color);
+  border: 4px solid var(--main-color);
   background-color: var(--background-color);
   border-radius: 8px;
   overflow: hidden;
@@ -94,7 +94,7 @@
       filter: sepia(0);
     }
     figcaption {
-      color: var(--accent-color);
+      color: var(--border-color-2);
       text-shadow: 0 0 10px rgba(38, 50, 56, 0.5);
     }
   }

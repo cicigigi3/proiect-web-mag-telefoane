@@ -9,6 +9,7 @@
   "author": "Dragos Port",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "sass": "^1.92.0",

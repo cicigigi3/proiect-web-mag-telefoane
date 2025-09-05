@@ -1,0 +1,51 @@
+
+$primary:       #1A237E; 
+$secondary:     #263238; 
+$success:       #4CAF50; 
+$info:          #90CAF9; 
+$warning:       #FFB300; 
+$danger:        #F44336; 
+$light:         #E3F2FD; 
+$dark:          #212121; 
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+
+$font-family-sans-serif: "Poppins", sans-serif;
+$headings-font-weight:   700;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,     
+  lg: 1050px,    
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+
+$border-radius: .5rem; 
+$border-radius-sm: .4rem;
+$border-radius-lg: .8rem;
+
+
+$btn-padding-y: .5rem;
+$btn-padding-x: 1rem;
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

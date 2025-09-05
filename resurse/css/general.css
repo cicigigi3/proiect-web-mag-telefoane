@@ -1,3 +1,5 @@
+/* (0.025) Task schema cromatica: (cerință individuală) */
+
 :root {
   --main-color-original: #1a237e;
   --main-color: #90caf9;
@@ -6,12 +8,15 @@
   --text-color-2: #263238;
   --text-color-3: #1a237e;
   --background-color: #e3f2fd;
-  --accent-color: #ffb300;
+  --accent-color: #ffcc31; 
   --border-color: #90caf9;
-  --border-color-2: #ffb300;
+  --border-color-2: #a5b7ff; 
+/* (Task Design Rudimentar - Subpunctul 1 și 4) Variabile pentru spațiere și padding. */
   --page-padding: 2rem;
   --zone-padding: 1rem;
 }
+
+
 
 html {
   font-size: 20px;
@@ -20,9 +25,38 @@ html {
 
 body {
   margin: 0;
+/* (Task Design Rudimentar - Subpunctul 1) Spațiere în stânga și dreapta paginii. */
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
   font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif !important; 
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: var(--text-color-3);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif !important; 
+  font-size: 23.4px !important;
+  font-weight: 700 !important;
+  color: var(--text-color-3);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+
+}
+#welcome-mesaj{
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 #welcome-mesaj{
@@ -31,6 +65,7 @@ body {
     margin-left: 3rem;
 }
 
+/* (0.15) Task layout:   (cerință individuală) */
 .grid-container {
   display: grid;
   width: 100%;
@@ -56,8 +91,10 @@ body {
 }
 .grid-container > * {
   font-size: 1rem;
+/* (Task Design Rudimentar - Subpunctul 3) Izolarea vizuală a zonelor. */
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+/* (Task Design Rudimentar - Subpunctul 4) Padding pentru distanțarea textului. */
   padding: var(--zone-padding);
 }
 
@@ -113,6 +150,8 @@ body {
       "online-list anunturi"
       "date-site anunturi ";
     grid-template-columns: 1fr 1fr;
+/* (Task Design Rudimentar - Subpunctul 2) Reducerea spațierii pe ecran mediu. */
+/* Valoarea `gap` este redusă la `0.5rem` pentru ecrane mai mici. */
     gap: 0.5rem;
     font-size: 1rem;
   }
@@ -123,6 +162,7 @@ body {
     padding-left: var(--page-padding);
     padding-right: var(--page-padding);
   }
+/* (Task Design Rudimentar - Subpunctul 5) Managementul elementelor media pe ecrane medii. */
   iframe,
   embed,
   img,
@@ -154,10 +194,12 @@ body {
     transition: none;
     animation: none;
   }
+   
   body {
     padding-left: var(--page-padding);
     padding-right: var(--page-padding);
   }
+/* (Task Design Rudimentar - Subpunctul 5) Managementul elementelor media pe ecrane mici. */
   iframe,
   embed,
   img,
@@ -176,10 +218,10 @@ figure {
 }
 
 picture img {
-  border: var(--accent-color) solid 0.2rem;
+  border: var(--border-color-2) solid 0.2rem;
   max-width: 500px;
 }
-
+/* (Task Design Rudimentar - Subpunctul 5) Managementul elementelor media. */
 img,
 video {
   
@@ -209,10 +251,42 @@ iframe {
   height: auto;
   display: block;
 }
+
 embed {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  display: block; 
+  width: 100%; 
+  max-width: 400px; 
+  height: 250px; 
+  border: 0.3rem solid var(--main-color); 
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
+  
+}
+footer{
+  margin-left: 3vw;
+
+}
+footer iframe {
+  display: block; 
+  width: 90%; 
+  max-width: 800px; 
+  height: 200px; 
+  margin-top: 1vw;
+  border: 0.2rem solid var(--main-color) !important; 
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+}
+
+.catalog-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 1rem 0; 
+}
+
+.catalog-container a {
+  margin-top: 1rem; 
+  font-size: 0.9rem;
+  color: var(--text-color-3);
 }
 
 figure {
@@ -229,7 +303,7 @@ th,
 td {
   padding: 10px;
 }
-
+/* tabel */
 .tabel table {
   caption-side: bottom;
   border-collapse: collapse;
@@ -254,6 +328,7 @@ thead th {
 }
 
 table caption {
+  
   font-size: 1rem;
 }
 
@@ -270,26 +345,36 @@ table caption {
     padding: 0.1rem;
   }
 }
-
+/* table */
 tbody tr:nth-child(odd) {
-  color: var(--main-color);
-  box-shadow: inset 0px 3px 10px 0.5px var(--main-color-transparent);
+  color: var(--text-color);
+  box-shadow: inset 0px 3px 8px 0.5px var(--text-color);
 }
 
 tbody tr:nth-child(even) {
-  color: var(--accent-color);
-  box-shadow: inset 0px 3px 10px 0.5px var(--main-color-transparent);
+  color: var(--text-color-3);
+  box-shadow: inset 0px 3px 8px 0.5px var(--main-color-original);
 }
+
 
 tbody td {
-  transition: font-size 0.75s ease-in-out;
   transition: background-color 0.75s ease-in-out;
+  vertical-align: middle; 
+  text-align: center;     
 }
-tbody tr:hover td {
-  font-size: 1.2em;
-  background-color: rgba(0, 0, 0, 0.25);
+tbody td > span {
+  display: inline-block; 
+  transition: transform 0.75s ease-in-out;
 }
 
+tbody tr:hover td {
+  background-color: rgba(165, 183, 255,0.3);
+}
+
+tbody tr:hover td > span {
+  transform: scale(1.2); 
+}
+/* taburi-stilizare */
 .container-iframe {
   display: flex;
   flex-direction: column-reverse;
@@ -302,8 +387,9 @@ tbody tr:hover td {
 #contentFrame {
   width: 100%;
   aspect-ratio: 16/9;
-  border-color: var(--main-color);
-  border-width: 0.3rem;
+  border-color: var(--main-color) !important;
+  border-style: solid !important;
+  border-width: 0.3rem !important;
 }
 
 .taburi-iframe {
@@ -318,10 +404,10 @@ tbody tr:hover td {
 .taburi-iframe a {
   background-color: var(--main-color-transparent);
   box-shadow: inset 0px 0px 6px 5px var(--main-color);
-  color: var(--main-color);
+  color: var(--text-color-3);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  font-size: 2vw;
+  font-size: 1.6vw;
   width: 49%;
   height: 6vw;
   text-align: center;
@@ -346,7 +432,7 @@ tbody tr:hover td {
   background-color: var(--main-color);
   clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }
-
+/* link top */
 #link-top {
   position: fixed;
   left: 20px;
@@ -408,7 +494,6 @@ tbody tr:hover td {
   opacity: 1;
   transition-delay: 0.3s;
 }
-
 :root {
   --link: var(--main-color);
   --link-visited: var(--text-color);
@@ -416,23 +501,30 @@ tbody tr:hover td {
 }
 
 /* stilizare-linkuri */
+
+:root {
+  --link-visited: var(--main-color); 
+  --link-hover: var(--main-color-original);
+}
+
+
 main a:visited {
   color: var(--link-visited);
 }
-main a[href^="http"]::before {
-  content: "\2BB3";
-  font-size: 1.5em;
+
+
+main a:active {
+  border: 0.1rem solid black;
+  border-radius: 4px; 
 }
 
-main a[href^="http"]:hover::before {
-  color: var(--link-hover);
-}
 
-main a {
+
+main a:not([href^="http"]) {
   background-image: radial-gradient(
     ellipse at center,
-    var(--background-color) 0,
-    var(--background-color) 40%,
+    var(--border-color) 0,
+    var(--border-color) 40%,
     transparent 80%,
     transparent 100%
   );
@@ -440,16 +532,32 @@ main a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0 0;
-  transition: background-size .75s ease, color .75s ease;
+  transition: background-size 0.75s ease;
 }
 
-main a:hover {
-    background-size: 100% 100%;
-
-
+main a:not([href^="http"]):hover {
+  background-size: 100% 100%;
 }
 
-main a:active{
-  border: 0.1rem solid black;
 
+
+main a[href^="http"]::before {
+  content: "\2BB3"; 
+  font-size: 1.5em;
+  margin-right: 0.2em; 
+  transition: color 0.3s ease; 
+}
+
+
+main a[href^="http"]:hover::before {
+  color: var(--link-hover);
+}
+
+.video-frame video {
+  display: block; 
+  width: 100%;   
+  height: auto;   
+  border: 0.3rem solid var(--border-color); 
+  border-radius: 8px; 
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
 }

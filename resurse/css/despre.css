@@ -1,11 +1,11 @@
 
 :root {
-  --main-color-original: #90CAF9;
-  --main-color: #1A237E;
+  --main-color-original:#1A237E ;
+  --main-color:#90CAF9 ;
   --main-color-transparent: rgba(26,35,126,0.12);
   --text-color: #263238;
   --background-color: #E3F2FD;
-  --accent-color: #FFB300;
+  --accent-color: #ffd470;
   --border-color: #F5F5F5;
 }
  
@@ -35,7 +35,7 @@
   font-size: 1.3em;
 
   margin-bottom: 0.5em;
-  color: var(--main-color);
+  color: var(--main-color-original);
 }
 
 #despre-main ul {
@@ -55,7 +55,7 @@
 #despre-beneficii h3 {
   margin-top: 0;
   font-size: 1.2em;
-  color: var(--main-color);
+  color: var(--main-color-original);
 }
 
 #despre-beneficii ul {

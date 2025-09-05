@@ -2,7 +2,6 @@
 <html lang="ro">
   <head>
     <%- include('../fragmente/head') %>
-    <link rel="stylesheet" href="/resurse/css/galerie.css" />
   </head>
   <body>
     <%- include('../fragmente/header') %>
@@ -44,23 +43,24 @@
           </section>
           <section>
             <h3>Reduceri Apple</h3>
-            <figure>
-              <picture>
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="./resurse/imagini/iphone14_large.jpg"
-                />
-                <source
-                  media="(min-width: 600px)"
-                  srcset="./resurse/imagini/iphone14_medium.jpg"
-                />
-                <img
-                  src="./resurse/imagini/iphone14_small.jpg"
-                  alt="iPhone 16 vedere din spate"
-                />
-              </picture>
-              <figcaption>iPhone 14, lansat pe 16 septembrie 2022</figcaption>
-            </figure>
+             <figure>
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="/resurse/imagini/iphone14_large.jpg"
+                  />
+                  <source
+                    media="(min-width: 600px)"
+                    srcset="/resurse/imagini/iphone14_medium.jpg"
+                  />
+                  <img
+                    src="/resurse/imagini/iphone14_small.jpg"
+                    alt="iPhone 14"
+                  />
+                </picture>
+                <figcaption>iPhone 14, lansat pe 16 septembrie 2022</figcaption>
+              </figure>
+
             <p>iPhone 14 - <s>250LEI</s> 300LEI</p>
             <dl>
               <dt>RAM</dt>
@@ -119,6 +119,7 @@
             </p>
           </details>
         </section>
+        
         <aside>
           <p>
             Poți vedea specificațiile complete pentru iPhone 16 pe
@@ -158,6 +159,8 @@
             allowfullscreen
           >
           </iframe>
+
+
         </div>
         <section class="video-vtt">
           <h2>Prezentare iPhone 16 Pro</h2>
@@ -190,34 +193,24 @@
           </div>
         </section>
 
-        <embed
-          src="./resurse/catalog.pdf"
-          type="application/pdf"
-          width="400"
-          height="200"
-        />
-        <a id="catalog" href="./resurse/catalog.txt" download
-          >Aici puteti descarca catalogul nostru de telefoane</a
-        >
+      <div class="catalog-container">
+  <embed src="/resurse/catalog.pdf" type="application/pdf">
+  <a href="/resurse/catalog.txt" download>Aici puteti descarca catalogul nostru de telefoane</a>
+    </div>
+        
       </div>
-      <div class="zona1">
-        Aliquam ac interdum elit. Maecenas vitae erat et eros convallis viverra
-        id eget dui. Sed porttitor id tellus nec consequat. Phasellus congue nec
-        felis eu sodales. Nulla sodales velit quis massa eleifend, nec tempus
-        ante gravida. Aenean vulputate ex eu sapien aliquet, in posuere felis
-        ultrices. Pellentesque auctor, velit id sollicitudin auctor, nisl quam
-        maximus orci, sed suscipit orci lorem quis tortor. Integer quis arcu
-        vitae turpis sodales consectetur. Duis eget elit est. Donec aliquet
-        felis in vehicula ultricies. Etiam venenatis imperdiet massa eu dictum.
-        Quisque vitae auctor mauris. Donec fringilla finibus leo sit amet
-        efficitur.
+     <div class="zona1">
+        <div class="zona1">
+  <div class="hero-content">
+    <h2>Telefonul Tău Ideal Te Așteaptă</h2>
+    <p>Descoperă cele mai noi modele de la branduri de top precum Apple, Samsung și Xiaomi.</p> <p>Beneficiezi de oferte exclusive, livrare rapidă în toată țara și garanție completă.</p>
+  </div>
+  </div>
       </div>
 
       <div class="tabel">
         <table>
-          <caption>
-            PROMOTII TELEFOANE
-          </caption>
+          <caption> PROMOTII TELEFOANE</caption>
           <thead>
             <tr>
               <th colspan="2" rowspan="2">Telefon</th>
@@ -232,32 +225,32 @@
           </thead>
           <tbody>
             <tr>
-              <td colspan="2">iPhone 14</td>
-              <td>6GB</td>
-              <td>128GB</td>
-              <td colspan="2">3250RON</td>
-              <td>În stoc</td>
+              <td colspan="2"><span>iPhone 14</span></td>
+              <td><span>6GB</span></td>
+              <td><span>128GB</span></td>
+              <td colspan="2"><span>3250RON</span></td>
+              <td><span>În stoc</span></td>
             </tr>
             <tr>
-              <td colspan="2">Samsung A55</td>
-              <td>8GB</td>
-              <td>256GB</td>
-              <td colspan="2">1700RON</td>
-              <td>În stoc</td>
+              <td colspan="2"><span>Samsung A55</span></td>
+              <td><span>8GB</span></td>
+              <td><span>256GB</span></td>
+              <td colspan="2"><span>1700RON</span></td>
+              <td><span>În stoc</span></td>
             </tr>
             <tr>
-              <td colspan="2">Xiaomi 14T</td>
-              <td>12GB</td>
-              <td>512GB</td>
-              <td colspan="2">2000RON</td>
-              <td>În stoc</td>
+              <td colspan="2"><span>Xiaomi 14T</span></td>
+              <td><span>12GB</span></td>
+              <td><span>512GB</span></td>
+              <td colspan="2"><span>2000RON</span></td>
+              <td><span>În stoc</span></td>
             </tr>
             <tr>
-              <td colspan="2">Pixel 7a</td>
-              <td>8GB</td>
-              <td>128GB</td>
-              <td colspan="2">2000RON</td>
-              <td>Nu</td>
+              <td colspan="2"><span>Pixel 7a</span></td>
+              <td><span>8GB</span></td>
+              <td><span>128GB</span></td>
+              <td colspan="2"><span>2000RON</span></td>
+              <td><span>Nu</span></td>
             </tr>
           </tbody>
           <tfoot>
@@ -273,15 +266,7 @@
       <div class="calendar">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          sollicitudin risus non tincidunt tempor. Ut rhoncus nibh at aliquam
-          tincidunt. Sed et ultricies diam. Nullam tincidunt lobortis est, nec
-          molestie massa scelerisque nec. Suspendisse nec orci in ante congue
-          tempor vel vitae erat. Fusce sed nulla quis purus pellentesque
-          pellentesque. Quisque quis libero eleifend, venenatis metus vel,
-          viverra lectus. Aliquam sed odio quis ipsum gravida pulvinar sed sed
-          orci. Nulla sit amet augue a magna dictum laoreet sed congue nisl.
-          Vivamus porttitor nulla in nulla vulputate convallis. Vestibulum porta
-          consequat tellus ut semper.
+          sollicitudin risus non tincidunt tempor.
         </p>
       </div>
       <div class="anunturi">
@@ -342,8 +327,11 @@
           urna. In dignissim aliquet ipsum vel faucibus
         </p>
       </div>
+    
+      
     </main>
-    <%- include('../fragmente/galerie') %> <%# ADAUGA ACEASTA LINIE %>
+    <hr class="hr-bootstrap-custom">
+      <%- include('../fragmente/galerie') %>
     <%- include('../fragmente/footer') %>
   </body>
 </html>

@@ -6,8 +6,8 @@ const sass = require("sass");
 
 app = express();
 
-//what this?
-v = [10, 27, 23, 44, 15];
+
+v = [10, 27, 24, 48, 15];
 
 nrImpar = v.find(function (elem) {
   return elem % 100 == 1;

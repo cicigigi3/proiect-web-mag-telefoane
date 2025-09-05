@@ -2,10 +2,11 @@ $main-color-original: rgb(9, 100, 194);
 $main-color: #E3F2FD;
 $main-color-transparent: rgba(144,202,249,0.12);
 $text-color: #263238;
+$text-color-2: #1a237e;
 $outline-color: rgba(38, 50, 56, 0.2);
 $background-color: #E3F2FD;
 $accent-color: #FFB300;
-$accent-color-2: #FFD54F;
+$accent-color-2: #94b5fc;
 $border-color: #F5F5F5;
 $page-padding: 2rem;
 $zone-padding: 1rem;
@@ -25,6 +26,7 @@ nav{
   right: $page-padding;
   z-index: 100;
   height: $nav-height;
+//acasa ascuns
   #burger-menu{
     display: none;
 
@@ -53,7 +55,7 @@ nav{
         padding: 0 1rem;
         transition: color 0.3s ease-in-out;
         &:hover{
-        color: darken($text-color, 20%);
+        color: $accent-color-2;
         }
       }
      
@@ -91,12 +93,12 @@ nav{
             transition: color 0.3s ease-in-out;
             
             &:hover {
-              color: darken($text-color, 20%);
+              color: $accent-color-2;
             }
           }
         }
       }
-      
+ //submeniu     
       &:hover > ul {
         transform: translateX(-50%) scale(1);
         opacity: 1;
