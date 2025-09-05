@@ -1,0 +1,65 @@
+
+:root {
+  --main-color-original: #90CAF9;
+  --main-color: #1A237E;
+  --main-color-transparent: rgba(26,35,126,0.12);
+  --text-color: #263238;
+  --background-color: #E3F2FD;
+  --accent-color: #FFB300;
+  --border-color: #F5F5F5;
+}
+ 
+
+#despre-main {
+  background: var(--background-color);
+  border-radius: 12px;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+
+  box-shadow: 2px 2px 6px var(--main-color-transparent);
+}
+#despre-main section,
+#despre-main h2,
+#despre-main p,
+#despre-main ul {
+  text-align: left;
+  color: var(--text-color);
+}
+
+#despre-main section {
+  margin-bottom: 2rem;
+}
+
+#despre-main h2 {
+  font-size: 1.3em;
+
+  margin-bottom: 0.5em;
+  color: var(--main-color);
+}
+
+#despre-main ul {
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+#despre-beneficii {
+  background: var(--accent-color);
+  border-radius: 12px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 900px;
+  box-shadow: 2px 2px 6px var(--main-color-transparent);
+}
+
+#despre-beneficii h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: var(--main-color);
+}
+
+#despre-beneficii ul {
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <%- include('../fragmente/head') %>
+    <link rel="stylesheet" href="/resurse/css/galerie.css" />
+  </head>
+  <body>
+    <%- include('../fragmente/header') %>
+    <main class="grid-container">
+      <div class="zona8">
+        <section id="noutati">
+          <h2>Noutati smartphone in 2025</h2>
+          <p>
+            Descoperă cele mai recente <b>noutăți smartphone</b> lansate în
+            2025. Fie că ești în căutarea unui <b>iPhone nou</b> sau a unui
+            model Android de ultimă generație, aici găsești tot ce ai nevoie.
+          </p>
+        </section>
+        <section id="oferte">
+          <h2>
+            <i class="fa-solid fa-bolt fa-bounce"></i>Oferte telefoane de
+            neratat
+          </h2>
+          <p>
+            Pe pagina noastră de <b>oferte telefoane</b> găsești reduceri
+            exclusive pentru branduri populare. Verifică zilnic cele mai bune
+            <b>reduceri Samsung</b> și telefoane flagship la prețuri speciale.
+          </p>
+          <ul>
+            <li><b>iPhone nou</b> cu până la 15% reducere</li>
+            <li><b>Smartphone nou</b> cu livrare gratuită</li>
+            <li><b>Reduceri Samsung</b> de până la 25%</li>
+          </ul>
+        </section>
+        <section id="pop">
+          <h2>Produse populare</h2>
+          <p>iPhone 16, Samsung A56, Xiaomi 14</p>
+        </section>
+        <section id="promotii">
+          <h2>Promotii!</h2>
+          <section>
+            <h3>Reduceri Samsung</h3>
+            <p>Samsung A54 - 100LEI</p>
+          </section>
+          <section>
+            <h3>Reduceri Apple</h3>
+            <figure>
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./resurse/imagini/iphone14_large.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="./resurse/imagini/iphone14_medium.jpg"
+                />
+                <img
+                  src="./resurse/imagini/iphone14_small.jpg"
+                  alt="iPhone 16 vedere din spate"
+                />
+              </picture>
+              <figcaption>iPhone 14, lansat pe 16 septembrie 2022</figcaption>
+            </figure>
+            <p>iPhone 14 - <s>250LEI</s> 300LEI</p>
+            <dl>
+              <dt>RAM</dt>
+              <dd>6 gb</dd>
+              <dd></dd>
+              <dt>Display</dt>
+              <dd>Super Retina Display</dd>
+              <dt>Proccesor</dt>
+              <dd>A 15 Bionic</dd>
+              <dt>Pret</dt>
+              <dd>
+                3150LEI sau
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mrow>
+                    <mtext>Pretul in Euro este: </mtext>
+                    <mfrac>
+                      <mn>3150</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>630</mn>
+                    <mo>€</mo>
+                  </mrow>
+                </math>
+              </dd>
+            </dl>
+          </section>
+        </section>
+        <section id="faq">
+          <h2>
+            <i class="fa-solid fa-circle-question"></i>Intrebari frecvente
+          </h2>
+          <details>
+            <summary>Ce metode de plate sunt acceptate?</summary>
+            <p>
+              Acceptam plata cu cardul, ramburs cat si plata in rate prin
+              diversi parteneri bancari.
+            </p>
+          </details>
+          <details>
+            <summary>In cat timp se livreaza?</summary>
+            <p>Livrarea este efectuata in jur de 3 zile lucratoare.</p>
+          </details>
+          <details>
+            <summary>Cat este perioada de garantie?</summary>
+            <p>
+              Pe fiecare produs beneficiati de 24 luni de garantie cu
+              posibilitatea de prelungire.
+            </p>
+          </details>
+          <details>
+            <summary>Ce este 5G?</summary>
+            <p>
+              <dfn>5g</dfn> este a cincea generatie de retele mobile, oferind
+              viteze semnificativ mai mari ca 4g cu latenta mai scazuta.
+            </p>
+          </details>
+        </section>
+        <aside>
+          <p>
+            Poți vedea specificațiile complete pentru iPhone 16 pe
+            <a
+              href="https://www.gsmarena.com/apple_iphone_16-13317.php"
+              target="_blank"
+              >GSMArena</a
+            >.
+          </p>
+        </aside>
+
+        <div class="container-iframe">
+          <div class="taburi-iframe">
+            <a
+              href="https://www.youtube-nocookie.com/embed/GDlkCkcIqTs"
+              target="contentFrame"
+              >Prezentare iPhone 16</a
+            >
+            <a
+              href="https://www.youtube-nocookie.com/embed/aDqzDoJPkaA"
+              target="contentFrame"
+              >Review iPhone 16</a
+            >
+          </div>
+          <div class="trapez">
+            <div id="trapez1"></div>
+            <div id="trapez2"></div>
+          </div>
+          <iframe
+            id="contentFrame"
+            title="Youtube video"
+            name="contentFrame"
+            width="300"
+            height="300"
+            src="https://www.youtube-nocookie.com/embed/GDlkCkcIqTs"
+            sandbox="allow-scripts allow-same-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <section class="video-vtt">
+          <h2>Prezentare iPhone 16 Pro</h2>
+
+          <div class="video-frame">
+            <video
+              id="iphone16pro"
+              controls
+              preload="metadata"
+              poster="/resurse/imagini/iphone16proposter.png"
+            >
+              <source src="/resurse/video/iphone16pro.mp4" type="video/mp4" />
+              <source src="/resurse/video/iphone16pro.webm" type="video/webm" />
+              <track
+                default
+                kind="captions"
+                src="/resurse/video/tracks/ro.vtt"
+                srclang="ro"
+                label="Română"
+              />
+              <track
+                kind="captions"
+                src="/resurse/video/tracks/eng.vtt"
+                srclang="en"
+                label="English"
+              />
+
+              Browserul tău nu suportă video HTML5.
+            </video>
+          </div>
+        </section>
+
+        <embed
+          src="./resurse/catalog.pdf"
+          type="application/pdf"
+          width="400"
+          height="200"
+        />
+        <a id="catalog" href="./resurse/catalog.txt" download
+          >Aici puteti descarca catalogul nostru de telefoane</a
+        >
+      </div>
+      <div class="zona1">
+        Aliquam ac interdum elit. Maecenas vitae erat et eros convallis viverra
+        id eget dui. Sed porttitor id tellus nec consequat. Phasellus congue nec
+        felis eu sodales. Nulla sodales velit quis massa eleifend, nec tempus
+        ante gravida. Aenean vulputate ex eu sapien aliquet, in posuere felis
+        ultrices. Pellentesque auctor, velit id sollicitudin auctor, nisl quam
+        maximus orci, sed suscipit orci lorem quis tortor. Integer quis arcu
+        vitae turpis sodales consectetur. Duis eget elit est. Donec aliquet
+        felis in vehicula ultricies. Etiam venenatis imperdiet massa eu dictum.
+        Quisque vitae auctor mauris. Donec fringilla finibus leo sit amet
+        efficitur.
+      </div>
+
+      <div class="tabel">
+        <table>
+          <caption>
+            PROMOTII TELEFOANE
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2" rowspan="2">Telefon</th>
+              <th id="memorie" colspan="2">Memorie</th>
+              <th id="pret" colspan="2" rowspan="2">Pret redus</th>
+              <th rowspan="2">Stoc</th>
+            </tr>
+            <tr>
+              <th headers="memorie">RAM</th>
+              <th headers="memorie">ROM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">iPhone 14</td>
+              <td>6GB</td>
+              <td>128GB</td>
+              <td colspan="2">3250RON</td>
+              <td>În stoc</td>
+            </tr>
+            <tr>
+              <td colspan="2">Samsung A55</td>
+              <td>8GB</td>
+              <td>256GB</td>
+              <td colspan="2">1700RON</td>
+              <td>În stoc</td>
+            </tr>
+            <tr>
+              <td colspan="2">Xiaomi 14T</td>
+              <td>12GB</td>
+              <td>512GB</td>
+              <td colspan="2">2000RON</td>
+              <td>În stoc</td>
+            </tr>
+            <tr>
+              <td colspan="2">Pixel 7a</td>
+              <td>8GB</td>
+              <td>128GB</td>
+              <td colspan="2">2000RON</td>
+              <td>Nu</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">
+                Promotiile au loc pana la sfarsitul lunii iulie.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="calendar">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          sollicitudin risus non tincidunt tempor. Ut rhoncus nibh at aliquam
+          tincidunt. Sed et ultricies diam. Nullam tincidunt lobortis est, nec
+          molestie massa scelerisque nec. Suspendisse nec orci in ante congue
+          tempor vel vitae erat. Fusce sed nulla quis purus pellentesque
+          pellentesque. Quisque quis libero eleifend, venenatis metus vel,
+          viverra lectus. Aliquam sed odio quis ipsum gravida pulvinar sed sed
+          orci. Nulla sit amet augue a magna dictum laoreet sed congue nisl.
+          Vivamus porttitor nulla in nulla vulputate convallis. Vestibulum porta
+          consequat tellus ut semper.
+        </p>
+      </div>
+      <div class="anunturi">
+        <p>
+          Integer imperdiet massa condimentum cursus sodales. Proin faucibus
+          imperdiet ornare. Curabitur malesuada, odio vulputate luctus rhoncus,
+          nunc lacus sagittis lorem, non tincidunt arcu ante sed urna. Nam
+          eleifend odio at dui scelerisque, ac porta mi vestibulum. Suspendisse
+          lacinia tincidunt pulvinar. Nulla vehicula nisl et felis pellentesque,
+          eget eleifend est efficitur. Praesent ultrices nunc non neque
+          convallis sollicitudin. Vestibulum ante ipsum primis in faucibus orci
+          luctus et ultrices posuere cubilia curae; Nunc feugiat nisi in nisl
+          dictum pretium. Ut sagittis, risus ac gravida sodales, quam leo
+          posuere mauris, sed elementum orci elit et lectus. Etiam convallis
+          viverra hendrerit. Cras vitae orci magna. Phasellus neque quam,
+          malesuada sed egestas eget, dignissim ut sapien. Donec tellus massa,
+          viverra nec purus eget, pretium rhoncus felis. Sed odio quam,
+          tristique ut imperdiet sed, tempor ac nunc.
+        </p>
+      </div>
+      <div class="online-list">
+        <p>
+          In pharetra sapien velit, a feugiat turpis imperdiet sit amet.
+          Suspendisse et efficitur augue. Aenean luctus faucibus felis, vel
+          vehicula elit lacinia sed. Pellentesque ultricies facilisis turpis.
+          Vivamus lobortis suscipit tristique. Praesent sed sem ac lectus
+          rhoncus mattis. Quisque vehicula semper sapien tincidunt molestie.
+          Cras bibendum interdum neque. Praesent iaculis ullamcorper arcu ac
+          blandit. Cras feugiat, neque malesuada aliquet hendrerit, odio ante
+          cursus neque, id iaculis odio augue non urna. Sed ornare ac nulla at
+          sollicitudin.
+        </p>
+      </div>
+      <div class="date-utilizator">
+        <p>
+          Fusce facilisis eleifend elit, nec efficitur urna efficitur lobortis.
+          Sed ut turpis massa. Nam sit amet malesuada ex. Sed tempor blandit
+          gravida. Vestibulum in est sed nibh tristique facilisis. Integer
+          consectetur metus in congue egestas. Nulla interdum leo vel volutpat
+          ultrices. Fusce egestas efficitur diam, vitae pellentesque ligula
+          ullamcorper non. Maecenas eget dolor rutrum, iaculis quam ac, semper
+          est. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+        <!-- 16 -->
+        <p><b>Ip: </b><%- locals.ip %></p>
+      </div>
+      <div class="date-site">
+        <p>
+          Proin sed blandit diam. Fusce lectus libero, dapibus quis nibh quis,
+          ornare feugiat mi. Aenean id tortor eu libero bibendum efficitur in
+          eget nisl. Nullam enim lorem, aliquet ac tincidunt id, tincidunt eget
+          nulla. Phasellus gravida laoreet felis. Curabitur lacinia gravida
+          ligula a gravida. Duis sapien urna, dictum ut purus in, ullamcorper
+          congue justo. Pellentesque posuere neque in faucibus efficitur.
+          Pellentesque bibendum risus dolor, ac commodo dolor feugiat at. Nullam
+          sit amet justo cursus, gravida nisi ut, ultricies eros. Fusce id ex
+          urna. In dignissim aliquet ipsum vel faucibus
+        </p>
+      </div>
+    </main>
+    <%- include('../fragmente/galerie') %> <%# ADAUGA ACEASTA LINIE %>
+    <%- include('../fragmente/footer') %>
+  </body>
+</html>

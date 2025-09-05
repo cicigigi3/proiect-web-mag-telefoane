@@ -1,0 +1,82 @@
+{
+  "cale_galerie": "/resurse/imagini/galerie",
+  "imagini": [
+    {
+      "fisier_imagine": "samsung_a16.jpg",
+      "nume_poza": "Samsung Galaxy A16",
+      "continut_alternativ": "Telefon Samsung Galaxy A16 de culoare neagră, cu trei camere pe spate.",
+      "descriere_poza": "Echilibrul perfect între performanță și preț, ideal pentru utilizarea de zi cu zi.",
+      "intervale_zile": [["sambata", "duminica"]]
+    },
+    {
+      "fisier_imagine": "samsung_a56.jpg",
+      "nume_poza": "Samsung Galaxy A56",
+      "continut_alternativ": "Telefon Samsung Galaxy A56 de culoare gri, cu un design minimalist.",
+      "descriere_poza": "Un display vibrant și o cameră versatilă fac din acest model o alegere populară și inteligentă.",
+      "intervale_zile": [["luni", "vineri"]]
+    },
+    {
+      "fisier_imagine": "samsung_s24.jpg",
+      "nume_poza": "Samsung Galaxy S24",
+      "continut_alternativ": "Telefon Samsung Galaxy S24 de culoare argintie, cu margini drepte.",
+      "descriere_poza": "Putere de top și un design premium. Experimentează cele mai noi inovații de la Samsung.",
+      "intervale_zile": [["luni", "vineri"]]
+    },
+    {
+      "fisier_imagine": "xiaomi_15_ultra.jpg",
+      "nume_poza": "Xiaomi 15 Ultra",
+      "continut_alternativ": "Telefon Xiaomi 15 Ultra de culoare neagră, cu un modul de cameră circular proeminent.",
+      "descriere_poza": "Sistemul de camere co-dezvoltat cu Leica redefinește fotografia mobilă. Pentru profesioniști și pasionați.",
+      "intervale_zile": [["sambata", "duminica"]]
+    },
+    {
+      "fisier_imagine": "google_pixel_10.jpg",
+      "nume_poza": "Google Pixel 10 Pro XL",
+      "continut_alternativ": "Telefon Google Pixel 10 Pro XL de culoare verde, cu bara de cameră specifică.",
+      "descriere_poza": "Inteligența artificială Google la superlativ. Fotografii perfecte de fiecare dată, fără efort.",
+      "intervale_zile": [["duminica", "sambata"]]
+    },
+    {
+      "fisier_imagine": "honor_400_lite.jpg",
+      "nume_poza": "Honor 400 Lite",
+      "continut_alternativ": "Telefon Honor 400 Lite de culoare gri închis, alături de încărcătorul inclus.",
+      "descriere_poza": "Un pachet complet care oferă performanță și autonomie excelentă, gata de utilizare din prima clipă.",
+      "intervale_zile": [["marti", "joi"]]
+    },
+    {
+      "fisier_imagine": "honor_magic_v5.jpg",
+      "nume_poza": "Honor Magic V5",
+      "continut_alternativ": "Telefon pliabil Honor Magic V5, de culoare neagră, afișând un ecran interior vibrant.",
+      "descriere_poza": "Eleganța întâlnește inovația. Un ecran generos care se pliază pentru a încăpea perfect în buzunar.",
+      "intervale_zile": [["sambata", "duminica"]]
+    },
+    {
+      "fisier_imagine": "iphone16.jpg",
+      "nume_poza": "Apple iPhone 16",
+      "continut_alternativ": "Telefon Apple iPhone 16 de culoare mov, cu sistem de camere dual.",
+      "descriere_poza": "Design iconic, performanță de neegalat și un ecosistem fluid. Noul standard în materie de smartphone-uri.",
+      "intervale_zile": [["sambata", "duminica"]]
+    },
+    {
+      "fisier_imagine": "motorola_edge60_fusion.jpg",
+      "nume_poza": "Motorola Edge 60 Fusion",
+      "continut_alternativ": "Telefon Motorola Edge 60 Fusion de culoare albastru-violet, cu un spate elegant.",
+      "descriere_poza": "Un design subțire și un ecran curbat care oferă o experiență de vizualizare captivantă.",
+      "intervale_zile": [["luni", "miercuri"]]
+    },
+    {
+      "fisier_imagine": "nubia_neo-2.jpg",
+      "nume_poza": "Nubia Neo 2 5G",
+      "continut_alternativ": "Telefon de gaming Nubia Neo 2 5G cu un design futurist pe spate.",
+      "descriere_poza": "Construit pentru gameri. Răcire avansată și un ecran de 120Hz pentru o experiență de joc fără compromisuri.",
+      "intervale_zile": [["vineri", "duminica"]]
+    },
+    {
+      "fisier_imagine": "redmi15.jpg",
+      "nume_poza": "Redmi 15",
+      "continut_alternativ": "Telefon Redmi 15 de culoare bej-auriu, cu modul de cameră vertical.",
+      "descriere_poza": "Autonomie impresionantă a bateriei și un ecran mare, perfect pentru divertisment și social media.",
+      "intervale_zile": [["luni", "vineri"]]
+    }
+  ]
+}

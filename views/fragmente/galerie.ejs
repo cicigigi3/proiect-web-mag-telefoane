@@ -1,0 +1,35 @@
+<% if (locals.imagini && locals.imagini.length > 0) { %>
+<section id="galerie-statica">
+  <h2>Galerie</h2>
+  <div class="grid-galerie">
+    <% locals.imagini.forEach(function(img, index) { %>
+    <figure>
+      <picture>
+        <!-- Deocamdată, sursele pentru ecrane mici/medii duc la aceeași imagine.
+             Le vom face funcționale la Pasul 4 cu pachetul sharp. -->
+        <source
+          media="(max-width: 768px)"
+          srcset="<%- locals.cale_galerie %>/mic/<%- img.fisier_imagine %>"
+        />
+        <source
+          media="(max-width: 1024px)"
+          srcset="<%- locals.cale_galerie %>/mediu/<%- img.fisier_imagine %>"
+        />
+        <img
+          src="<%- locals.cale_galerie %>/<%- img.fisier_imagine %>"
+          alt="<%- img.continut_alternativ || img.nume_poza %>"
+          title="<%- img.descriere_poza %>"
+        />
+      </picture>
+      <figcaption>
+        <%- img.nume_poza %> <% if (img.autor) { %>
+        <small class="autor-imagine"
+          >(Autor: <a href="<%- img.sursa %>" target="_blank"><%- img.autor %></a>)</small
+        >
+        <% } %>
+      </figcaption>
+    </figure>
+    <% }); %>
+  </div>
+</section>
+<% } %>

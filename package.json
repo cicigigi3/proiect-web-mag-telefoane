@@ -1,0 +1,16 @@
+{
+  "name": "magazin-telefoane",
+  "version": "1.0.0",
+  "description": "Proiect despre site de vanzari online de telefoane",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dragos Port",
+  "license": "ISC",
+  "dependencies": {
+  "ejs": "^3.1.10",
+  "express": "^4.19.2",
+  "sharp": "^0.33.4"
+}
+}
