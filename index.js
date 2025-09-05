@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const sharp = require("sharp");
+const sass = require("sass");
 
 app = express();
 
@@ -21,11 +22,14 @@ app.set("view engine", "ejs");
 
 obGlobal = {
   obErori: null,
-  obGalerie: null
+  obGalerie: null,
+  folderScss: path.join(__dirname, "resurse/sass"),
+  folderCss: path.join(__dirname, "resurse/css"),
+  folderBackup: path.join(__dirname, "backup")
 };
 
 // Actualizeaza vect_foldere si adauga si folderele pentru galerie
-vect_foldere = ["temp", "resurse/imagini/galerie/mic", "resurse/imagini/galerie/mediu"];
+vect_foldere = ["temp", "resurse/imagini/galerie/mic", "resurse/imagini/galerie/mediu","backup"];
 for (let folder of vect_foldere) {
   let caleFolder = path.join(__dirname, folder);
   if (!fs.existsSync(caleFolder)) {
@@ -88,6 +92,45 @@ function filtreazaImagini() {
     nrImagini--
   }
   return imaginiFiltrate.slice(0, nrImagini)
+}
+
+// Adaugă această funcție nouă
+function compileazaScss(caleScss, caleCss) {
+  // Verificăm dacă primim căi absolute sau relative
+  if (!path.isAbsolute(caleScss)) {
+    caleScss = path.join(obGlobal.folderScss, caleScss);
+  }
+
+  // Generăm calea CSS dacă lipsește
+  if (!caleCss) {
+    let numeFisier = path.basename(caleScss, ".scss");
+    caleCss = path.join(obGlobal.folderCss, numeFisier + ".css");
+  } else if (!path.isAbsolute(caleCss)) {
+    caleCss = path.join(obGlobal.folderCss, caleCss);
+  }
+
+  // Backup
+  let folderBackupCss = path.join(obGlobal.folderBackup, "resurse/css");
+  if (!fs.existsSync(folderBackupCss)) {
+    fs.mkdirSync(folderBackupCss, { recursive: true });
+  }
+
+  if (fs.existsSync(caleCss)) {
+    let numeFisierCss = path.basename(caleCss);
+    try {
+      fs.copyFileSync(caleCss, path.join(folderBackupCss, numeFisierCss));
+    } catch (err) {
+      console.error("Eroare la backup CSS:", err);
+    }
+  }
+
+  // Compilare
+  try {
+    let rezultat = sass.compile(caleScss);
+    fs.writeFileSync(caleCss, rezultat.css);
+  } catch (err) {
+    console.error("Eroare la compilare SCSS:", err);
+  }
 }
 
 initErori()
@@ -226,6 +269,29 @@ app.get("/*", function (req, res) {
     }
   }
 });
+
+// Adaugă acest bloc de cod
+fs.readdir(obGlobal.folderScss, function(err, fisiere) {
+  if (err) {
+    console.error("Eroare la citirea folderului SCSS:", err);
+    return;
+  }
+  fisiere.forEach(function(fisier) {
+    if (path.extname(fisier) === ".scss") {
+      compileazaScss(fisier);
+    }
+  });
+});
+
+// Adaugă acest bloc nou
+fs.watch(obGlobal.folderScss, function(eveniment, numeFisier) {
+  console.log("Eveniment:", eveniment);
+  if (numeFisier && path.extname(numeFisier) === ".scss") {
+    console.log("S-a modificat fisierul:", numeFisier);
+    compileazaScss(numeFisier);
+  }
+});
+
 
 app.listen(8080);
 console.log("Serverul a pornit");

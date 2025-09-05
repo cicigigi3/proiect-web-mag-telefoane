@@ -43,7 +43,6 @@ nav ul li ul {
   transform: translateX(-50%) scale(0);
   transform-origin: top center;
   transition: transform 0.3s ease-in-out;
-  width: -moz-max-content;
   width: max-content;
   opacity: 0;
   background-color: #E3F2FD;
@@ -106,19 +105,9 @@ nav ul li:hover > ul {
   }
 }
 @media screen and (max-width: 768px) {
-  nav {
-    display: flex;
-    position: fixed;
-    background-color: #E3F2FD;
-    flex-direction: column;
-    align-items: center;
-    left: 0;
-    right: 0;
-  }
   nav #menu-toggle:checked + #burger-menu + #main-nav {
     display: flex;
-    -webkit-mask-position: top;
-            mask-position: top;
+    mask-position: top;
   }
   nav #burger-menu {
     display: flex;
@@ -130,6 +119,15 @@ nav ul li:hover > ul {
     left: 2vw;
     top: 2vw;
   }
+  nav {
+    display: flex;
+    position: fixed;
+    background-color: #E3F2FD;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+  }
   nav #main-nav {
     box-sizing: border-box;
     display: flex;
@@ -140,17 +138,11 @@ nav ul li:hover > ul {
     background-color: #E3F2FD;
     border: 0;
     margin: 0;
-    -webkit-mask-image: linear-gradient(to top, transparent 0%, transparent 50%, black 75%, black 100%);
-            mask-image: linear-gradient(to top, transparent 0%, transparent 50%, black 75%, black 100%);
-    -webkit-mask-size: 100% 370%;
-            mask-size: 100% 370%;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-position: bottom;
-            mask-position: bottom;
-    transition: -webkit-mask-position 0.7s ease-in-out;
+    mask-image: linear-gradient(to top, transparent 0%, transparent 50%, black 75%, black 100%);
+    mask-size: 100% 370%;
+    mask-repeat: no-repeat;
+    mask-position: bottom;
     transition: mask-position 0.7s ease-in-out;
-    transition: mask-position 0.7s ease-in-out, -webkit-mask-position 0.7s ease-in-out;
   }
   nav #main-nav #acasa ul {
     display: flex;
@@ -167,4 +159,4 @@ nav ul li:hover > ul {
     opacity: 1;
     transform: scale(1) translateX(0);
   }
-}/*# sourceMappingURL=nav.css.map */
+}

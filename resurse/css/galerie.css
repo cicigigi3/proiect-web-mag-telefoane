@@ -62,8 +62,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: sepia(1);
   transition: filter 800ms ease-in-out;
 }
@@ -91,4 +90,4 @@
 .grid-galerie figure:hover figcaption {
   color: var(--accent-color);
   text-shadow: 0 0 10px rgba(38, 50, 56, 0.5);
-}/*# sourceMappingURL=galerie.css.map */
+}
